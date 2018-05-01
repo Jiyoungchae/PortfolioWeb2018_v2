@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+@media ( max-width: 768px ) {
+  body { color: red; }
+}
+/********** jumbotron begin**********/
+.jumbotron-bg {
+  background-color: #f3e2b8;
+  background-size:auto;
+  text-shadow: black 0.2em 0.2 em 0.2 em;
+  color:white;
+}
+.jumbotron {
+  background-size:auto;
+  padding:auto 0;
+}
+.designer {
+  color:black;
+  font-size:80px;
+  padding:113px 0 0 0;
+  text-align: left;
+  left:100px;
+}
+.developer {
+  color:#150592;
+  font-size:60px;
+  text-align: left;
+  left:100px;
+}
+.dreamer {
+  color:#fff;
+  font-size:40px;
+  text-align: left;
+  left:100px;
+}
+.party {
+  color:#000;
+  font-size:40px;
+  text-align: left;
+  left:100px;
+}
+.food {
+  color:#fff;
+  font-size:60px;
+  text-align: left;
+  left:100px;
+}
+.speechBalloon {
+  padding:113px 0 0 0;
+  color:#000;
+}
+.speechBalloon img {
+  position:relative;
+
+}
+.speechBalloon .text {
+  position:absolute;
+  display:block;
+  left:0;
+  bottom:0;
+  width:561px;
+  height:604px;
+  padding:82px 0 0 38px;
+  color:#000;
+  font-size:40px;
+}
+.speechBalloon .submitButton  {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+  margin:60px 0 0 0;
+}
+.submitButton:hover {
+  background: #000000;
+  text-decoration: none;
+  color: #fff;
+}
+input{
+    border-width:0px 0px 2px 0px;
+    border-bottom: 3px solid #000;
+}
+/********** jumbotron end **********/
+
+/********** interests begin**********/
+#columns{
+        column-width:350px;
+        column-gap: 15px;
+        margin:60px 0;
+      }
+      #columns figure{
+        display: inline-block;
+        margin:0;
+        margin-bottom: 15px;
+        padding:10px;
+      }
+      #columns figure img{
+        width:100%;
+        border:1px solid rgba(0,0,0,0);
+      }
+      #columns figure figcaption{
+        padding:10px;
+        margin-top:11px;
+        text-align: center;
+      }
+      .text01 {
+        font: bold 15px Inconsolata;
+      }
+      .text02 {
+        font: italic bold 15px Georgia, serif;
+      }
+      .text03 {
+        font: bold 15px Arial, serif;
+      }
+      .text04 {
+        font: italic bold 15px Georgia, serif;
+      }
+/********** interests end **********/
+
+/********** works beggin **********/
+.monitor {
+ background: lightblue url("images/monitor.png") no-repeat fixed center; 
+}
+/********** works end **********/
+
+/********** footer begin**********/
+.footerBox {
+  padding:30px 0;
+  background-color:#000000;
+  color:#ffffff;
+}
+.social-icon {
+  position:relative;
+  display:inline-block;
+}
+.social-icon p{
+  position:relative;
+  display:inline-block;
+  font-size: 20px;
+  font-weight:bold;
+}
+.social-icon-space{
+  position:relative;
+  padding:0 15px;
+  color: :#fff;
+}
+
+
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+
+
+.bottom-nav  {
+  display:inline-block;
+}
+.bottom-nav ul {
+  display:inline-block;
+}
+.bottom-nav li {
+  display:inline-block;
+  margin:0 20px 0 0;
+  font-size: 18px;
+  text-indent: 0;
+}
+
+.bottom-nav ul li.first-child {
+  text-indent: -30px;
+}
+.copyright {
+  font-size: 18px;
+  padding-top:80px;
+}
+.whodesigned {
+  font-size: 18px;
+  padding:10px 0 0 0;
+}
+
+/********** footer end **********/
