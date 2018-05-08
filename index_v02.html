@@ -8,6 +8,7 @@
     <link href="css/module.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
     <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
     <title>Jiyoung's Website</title>
@@ -56,8 +57,7 @@
             <p class="food">Food Adventurer</h1>
           </div>
           <div class="col-md-6">
-            <div class="speechBalloon">
-              <img src="images/speechBalloon.png" alt="">
+            <div id="plate-default" class="plate pointer">
               <form action="/my-handling-form-page" method="post">
                 <div class="text">
                   <label for="name">What is your name?</label>
@@ -67,7 +67,7 @@
                   </div>
                 </div>
               </form>
-            </div>
+              </div>
           </div>
         </div>
       </div>
@@ -213,21 +213,53 @@
             </div>
           </div>
         </div>
-            </footer>
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-            <script src="js/bootstrap.js"></script>
-            <!-- work image changing begins-->
-            <!-- <script>
-              $( document ).ready( function() {
-                $("img")
-                  .mouseover( function() {
-                    $(this).attr( 'src', 'images/lotteryWebsite02.png' );
-                  } )
-                  .mouseout( function() {
-                    $(this).attr( 'src', 'images/lotteryWebsite01.png' );
-                  } );
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <!-- Jumbotron floating box begins -->
+      <script src="js/jquery.plate.js"></script>
+      <script>
+            $('#plate-default').plate();
+            $('#plate-inverse').plate({
+                inverse: true
+            });
+            $('#plate-custom').plate({
+                perspective: 200,
+                maxRotation: 20,
+                animationDuration: 100
+            });
+            $('#listener-contained').plate({
+                element: '#plate-contained'
+            });
+            $('#listener-remote').plate({
+                element: $('#plate-remote')
+            });
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- Jumbotron floating box begins -->
+        <!-- work image changing begins-->
+        <!-- <script>
+          $( document ).ready( function() {
+            $("img")
+              .mouseover( function() {
+                $(this).attr( 'src', 'images/lotteryWebsite02.png' );
+              } )
+              .mouseout( function() {
+                $(this).attr( 'src', 'images/lotteryWebsite01.png' );
               } );
-            </script> -->
-            <!-- work image changing ends-->
+          } );
+        </script> -->
+        <!-- work image changing ends-->
           </body>
           </html>

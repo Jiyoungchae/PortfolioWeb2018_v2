@@ -9,15 +9,20 @@
   background-size:auto;
   text-shadow: black 0.2em 0.2 em 0.2 em;
   color:white;
+  padding: 100px 0;
 }
 .jumbotron {
   background-size:auto;
   padding:auto 0;
 }
+.jumbotron_animation {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
 .designer {
   color:black;
   font-size:80px;
-  padding:113px 0 0 0;
+  padding:10px 0 0 0;
   text-align: left;
   left:100px;
 }
@@ -45,37 +50,32 @@
   text-align: left;
   left:100px;
 }
-.speechBalloon {
-  padding:113px 0 0 0;
-  color:#000;
-}
-.speechBalloon img {
-  position:relative;
+.pointer {cursor: pointer;}
 
-}
-.speechBalloon .text {
-  position:absolute;
+.plate { width: 561px; height: 438px; background: #fff; color: #000;
+  margin:37px auto 0; padding: 80px 0 0 50px ; font-size: 24px;}
+
+.plate .text {
+  position:relative;
   display:block;
   left:0;
   bottom:0;
-  width:561px;
-  height:604px;
-  padding:82px 0 0 38px;
   color:#000;
   font-size:40px;
 }
-.speechBalloon .submitButton  {
+.submitButton  {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
+  width: 235px;
+  height:78px;
+  margin-top: 50px;
   font-family: Arial;
   color: #000000;
   font-size: 20px;
   background: #ffffff;
-  padding: 10px 20px 10px 20px;
   border: solid #000000 2px;
   text-decoration: none;
-  margin:60px 0 0 0;
 }
 .submitButton:hover {
   background: #000000;
@@ -83,6 +83,7 @@
   color: #fff;
 }
 input{
+    height: 100px;
     border-width:0px 0px 2px 0px;
     border-bottom: 3px solid #000;
 }
@@ -124,13 +125,83 @@ input{
 /********** interests end **********/
 
 /********** works beggin **********/
-.monitor {
- background: lightblue url("images/monitor.png") no-repeat fixed center; 
+.workbg{
+  background-color: #000;
+  background-size:auto;
+  text-shadow: black 0.2em 0.2 em 0.2 em;
+  color:white;
+  padding-bottom: 50px;
 }
+.lotteryWebsite{
+  margin-top:35px;
+  border: 1px solid #666;
+  left:0; right:0; margin-left:auto; margin-right:auto;
+  word-break:normal;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
 /********** works end **********/
 
-/********** footer begin**********/
+/********** skills begin **********/
+.titleCenter {
+  text-align: center;
+  font-weight: bold;
+  padding:33px 0 0 0;
+}
+.titleCenter_hr {
+  text-align: center;
+  width: 50px;
+  border-bottom: 3px solid #5f6cd9;
+  left:0; right:0; margin-left:auto; margin-right:auto;
+}
+/********** skills end **********/
+
+/********** email begin **********/
+.emailTitleCenter {
+  font-size: 38pt;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", serif;
+  width: 509px;
+  text-align: center;
+  padding:100px 0 33px 0;
+  border-bottom: 3px solid #5f6cd9;
+  left:0; right:0; margin-left:auto; margin-right:auto;
+}
+.inputTitle {
+  position: left;
+  font-size: 15pt;
+  width: 509px;
+  padding:33px 0;
+}
+.inputLine {
+  width: 509px;
+  padding:20px 0;
+  border-bottom: 3px solid #5f6cd9;
+}
+.emailButton  {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #000000 2px;
+  text-decoration: none;
+  margin:60px 0 0 0;
+}
+.submitButton:hover {
+  background: #000000;
+  text-decoration: none;
+  color: #fff;
+}
+/********** email end **********/
+
+/********** footer begin **********/
 .footerBox {
+  margin:162px 0 0 0;
   padding:30px 0;
   background-color:#000000;
   color:#ffffff;
