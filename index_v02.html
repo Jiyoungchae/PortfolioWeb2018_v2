@@ -6,12 +6,14 @@
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/codingBooster.css" rel="stylesheet" media="screen">
     <link href="css/module.css" rel="stylesheet" media="screen">
+    <link href="css/stylecss" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/> -->
     <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> -->
     <script src="js\portfolioJQuery.js"></script>
+    <script src="js\dnWaterfall.js"></script>
     <title>Jiyoung's Website</title>
   </head>
   <body>
@@ -96,8 +98,8 @@
     <!-- jumbotron ends -->
     <!-- interests begin -->
       <div class="container">
-        <div id="columns">
-          <figure>
+       <div id="columns">
+          <!-- <figure>
             <img src="images/cupcake.png">
             <figcaption class="text03">Sweet sweet white pineapple cream</figcaption>
           </figure>
@@ -131,9 +133,42 @@
           <figure>
             <img src="images/tasmania.png">
             <figcaption>Wineglass Bay Coles Bay, Tasmania 2018</figcaption>
-          </figure>
+          </figure> -->
+          <div class="wall">
+            <a class="wall-item" href="#">
+              <img src="images/cupcake.png">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </a>
+            <div class="wall-item">
+              <img src="images/dumbo.png">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </div>
+            <div class="wall-item">
+              <img src="images/binary.png">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </div>
+            <div class="wall-item">
+              <img src="images/rainbow.png">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </div>
+            <div class="wall-item">
+              <img src="images/music.png">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </div>
+            <div class="wall-item">
+              <img src="images/circus.png">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </div>
+            <div class="wall-item">
+              <img src="images/pesto.png">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </div>
+            <div class="wall-item">
+              <img src="images/tasmania.png">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            </div>
+        </div>
       </div>
-    </div>
     <!-- interests end -->
     <!-- works begin -->
     <div class="container-fluid workbg">
@@ -165,9 +200,6 @@
           <h3 class="titleCenter">Web Development</h3>
           <hr class="titleCenter_hr">
           <p>I love bringing my designs to life in HTML, CSS, Javascript and jQuery.</p>
-          <ul>
-            <li></li>
-          </ul>
         </article>
         <article class="col-lg-6">
           <h3 class="titleCenter">Web Design</h3>
@@ -295,25 +327,21 @@
         </script>
         <!-- Jumbotron animated text ends -->
         <!-- Pinterest Layout begins -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-        <script src="js/dnWaterfall.js"></script>
+        <script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> </script>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="jjaliswall.js"></script>
+
         <script>
-        $(".dnWaterfall").dnWaterfall();
-        </script>
-        </body>
-        <script type="text/javascript">
 
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-36251023-1']);
-          _gaq.push(['_setDomainName', 'jqueryscript.net']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-
+        $('.wall').jaliswall({item:'.wall-item'});
         </script>
         <!-- Pinterest Layout ends -->
         <!-- work image changing begins-->
