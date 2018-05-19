@@ -6,7 +6,6 @@
 /********** jumbotron begin**********/
 .jumbotron-bg {
   background-color: #f3e2b8;
-  background-size:auto;
   text-shadow: black 0.2em 0.2 em 0.2 em;
   color:white;
   padding: 100px 0;
@@ -178,7 +177,7 @@ font-size: 5em;
 
       .wall {
         display: block;
-        position: relative;
+        /* position: relative; */
       }
 
       .wall-column {
@@ -187,7 +186,7 @@ font-size: 5em;
         width: 33.333333%;
         float: left;
         padding: 0 12px;
-        box-sizing: border-box;
+
       }
       @media (max-width: 640px) {
 
@@ -213,14 +212,27 @@ font-size: 5em;
   padding-bottom: 50px;
 }
 .lotteryWebsite{
-  margin-top:35px;
-  border: 1px solid #666;
+  margin:90px;
   left:0; right:0; margin-left:auto; margin-right:auto;
   word-break:normal;
   transition-property: all;
   transition-duration: 1s;
 }
+.aboutlottery{
+  vertical-align: middle;
+  margin-top: 100px;
 
+}
+.circle{
+  width:350px;
+  height:350px;
+  border-radius: 50%;
+  background: #00d3d3;
+  background: url(images/lotteryWebsite01.png) center 100% no-repeat;
+}
+.center{
+
+}
 /********** works end **********/
 
 /********** skills begin **********/
@@ -245,6 +257,7 @@ font-size: 5em;
   width: 509px;
   text-align: center;
   padding:100px 0 33px 0;
+  margin-bottom:100px;
   border-bottom: 3px solid #5f6cd9;
   left:0; right:0; margin-left:auto; margin-right:auto;
 }
@@ -252,11 +265,11 @@ font-size: 5em;
   position: left;
   font-size: 15pt;
   width: 509px;
-  padding:33px 0;
+  padding:20px 0 10px 0;
 }
 .inputLine {
   width: 509px;
-  padding:20px 0;
+  padding:10px 0;
   border-bottom: 3px solid #5f6cd9;
 }
 .emailButton  {
@@ -285,6 +298,7 @@ font-size: 5em;
   padding:30px 0;
   background-color:#000000;
   color:#ffffff;
+  background-size:auto;
 }
 .social-icon {
   position:relative;
@@ -301,7 +315,6 @@ font-size: 5em;
   padding:0 15px;
   color: :#fff;
 }
-
 
 .footer {
   background: #061D25;
